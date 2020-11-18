@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* Ámbit de vsisibilitat d'una variable (aplicable també a funcions) */
+
+        // Variable global
+        const preu = 50;
+
+        function calculaPreu(){
+            let preuFinal = 0;
+            alert("Mostrar vairable global:" +  preu);
+            preuFinal = preu+50;
+            return preuFinal;
+        }
+        console.log("Correcte:", calculaPreu());
+        //alert("Error:", preuFinal);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
