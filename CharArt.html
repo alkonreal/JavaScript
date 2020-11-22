@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // Este ejercicio tambien esta incompleto
+
+        // Como hay que recorrer un array, deberemos utilizar 
+        // un bucle "FOR"
+        function contarAS(texto) {
+
+
+            let contador = 0;
+// Cuiado , poner el nombre de la variable o lo que esta dentro de
+// los parantesis de la funcion  y .length
+            for (var i = 0; i < texto.length; i++) {
+                if (texto.charAt(i) == 'a' || texto.charAt(i) == 'A') {
+
+                    contador = contador + 1;
+
+                }
+
+
+            }
+            return contador;
+
+        }
+
+
+
+        let morena = " Lorena la morena";
+
+        console.log("Numero de as:", contarAS(morena))
+    </script>
+
+</body>
+
+</html>

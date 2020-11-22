@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // Ahora mediante una funcion
+        function calcularIVA(precioProducto) {
+
+            const iva = 0.21;
+            // Se crea una variable nueva que contenga la variable de la funcion de arriba
+            // Operamos
+            let precioiVA = precioProducto * iva;
+            //Ponemos Return y el nombre de la variable que hemos creado dentro de la funcion
+            return precioiVA;
+        }
+        // Poner lsa variables despues de la función
+        let = precioTelevisor = 600;
+        // Decirle console.log para que aparezca el mensaje en pantalla
+        // mensaje dentro del parentesis (  ,nombre de la funcion(nombre de la variable del producto)  ) 
+        console.log("El IVA del televisor es:", calcularIVA(precioTelevisor));
+
+        //  SIn esto no se ejecuta la funcion 
+        calcularIVA(precioTelevisor)
+    </script>
+
+    <!-- <script>
+        let precio = 20
+        let iva = precio * 0.21
+        let totaliva = iva
+        console.log(totaliva + "€ de IVA")
+    </script> -->
+</body>
+
+</html>

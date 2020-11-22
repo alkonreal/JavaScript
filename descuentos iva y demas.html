@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        function usuariosdescuentos(precio) {
+
+            if (precio <= 50 && precio >= 10) {
+                console.log("numero1",precio - 5)
+            } else if (precio > 101) {
+                console.log("numero2",precio * 0.10)
+            } else if (precio <= 100 || precio > 50) {
+                console.log("numero3",precio -10)
+            }
+            return usuariosdescuentos
+        }
+        let precio = 101
+        let descuento = precio * 0.10
+        let porciento = precio - descuento
+        console.log(usuariosdescuentos(precio))
+
+
+        // console.log("Numero de as:", contarAS(morena))
+
+    </script>
+
+    <!-- Este ejercicio no funciona, tengo que arreglarlo -->
+
+    <!-- <script>
+        
+        function usuariosdescuentos(precio) {
+
+            if (precio <= 100 || precio > 50) {
+                console.log("numero1",precio - 10)
+            } else if (precio <= 50 && precio >= 10) {
+                console.log("numero2",precio - 5)
+            } else if (precio > 101) {
+                console.log("numero3",precio * 0.10)
+            }
+            return usuariosdescuentos
+        }
+        let precio = 20
+        let descuento = precio * 0.10
+        let porciento = precio - descuento
+        console.log(usuariosdescuentos(precio))
+
+
+        // console.log("Numero de as:", contarAS(morena))
+
+        
+    </script> -->
+
+
+
+</body>
+
+</html>

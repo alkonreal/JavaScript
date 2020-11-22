@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function numeromayor(num1, num2) {
+
+
+            if (num2 > num1) {
+
+
+                return num2;
+
+            } else {
+
+                return num1;
+            };
+        }
+        let num1 = 200
+        let num2 = 300
+
+        //  Aqui lo he puesto de otra manera
+        // He creado la variable nummayor con el valor varible de la funcion numeromayor y entre parantesis
+        //  he puesto 2 cantidades
+        let nummayor = numeromayor(900, 771);
+        // Aqui lo muestro por consola
+        console.log("El numero mayor es ", numeromayor(nummayor));
+        // ---------------------------------------------------------------------
+        // Aqui es como siempre, nombre de la funcion y entre parantesis las variables
+        console.log("El numero mayor es ", numeromayor(num1, num2));
+
+
+        //  SI no ponemos esto, la funcion no funcionará
+        numeromayor(num1, num2)
+    </script>
+
+
+<!-- De otra manera -->
+    <script>
+    
+
+        function getMaxOfArray(numArray) {
+            return Math.max.apply(null, numArray);
+        }
+
+        let numArray = [1, 2, 4, 5];
+
+        console.log(getMaxOfArray(numArray));
+    </script>
+
+
+
+
+</body>
+
+</html>

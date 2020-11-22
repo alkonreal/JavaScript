@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+
+
+function validaremail(email) {
+
+
+
+
+if (email == null || email.length == 50 || validar.test(email)){
+
+
+    console.log("Es valido")
+
+}else{console.log("Es invalido")};
+
+// En este ejemplo solo pondremos Return sin el nombre de la variable
+return 
+
+}
+// let email=" alkonreal@digimon.es";
+// console.log(validar.indexOf("alkon"))
+
+// let email = "alkonreal@digimon.es"
+ email = "alkonreal@digimon.es"
+// Si en vez de poner var pongo let, me da error
+// var usuario = "alkonreal";
+// var dominio = "@digimon.es";
+
+// -----------------
+// El primer {1,30}, marca el maximo de caractares para el Usuario
+// El segundo {1,20}, marca el maximo de caracteres para el Dominio
+// El tercer {2,3}, marca el maximo de caracteres para el Dominio principal(.com,.es,.org, etc.)
+
+var validar = /^[-\w.%+]{1,30}@(?:[A-Z0-9-]{1,20}\.){1,3}[A-Z]{2,3}$/i;
+// return email;
+
+console.log(email)
+console.log(validaremail(email));
+
+validaremail(email)
+
+
+
+
+</script>
+
+
+<!-- <script>
+function validarform1(){
+
+    var email = document.getElementById("email").value;
+    var text = document.getElementById("text");
+      var valit = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+  
+    if (email == null || email.length == 0 || valit.test(email))
+    {
+  text.innerHTML = "valido";
+  text.style.color = "#00ff00";
+    }
+    else
+    {
+  text.innerHTML = "invalido";
+  text.style.color = "#ff0000";
+  
+    }
+  
+    if (email=="")
+    {
+  text.innerHTML = "";
+  text.style.color = "#00ff00";
+    }
+  }
+
+
+</script>
+
+
+
+
+
+
+      <form id="contacto1">
+      
+      <div class="col-input" >
+      <label for="Email">E-mail</label>
+      <input type="email" name="correo" id="email" onkeydown="validarform1()">
+      <span id="text"></span>
+      </div>
+      </form> -->
+
+
+
+
+
+    <!-- <form action="validaremail(email)"      >
+
+
+
+<input type="email" name="email" id="email">
+<input type="submit" value="Enviar">
+
+    </form>
+
+<script>
+
+
+function validaremail(email) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+   console.log("La dirección de email " + valor + " es correcta.");
+  } else {
+   console.log("La dirección de email es incorrecta.");
+  }
+}
+
+
+
+
+
+
+</script> -->
+
+
+
+</body>
+</html>

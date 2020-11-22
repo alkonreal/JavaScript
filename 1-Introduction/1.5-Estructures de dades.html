@@ -13,12 +13,20 @@
 			console.log(meses);
 
 			// Accedir a un element
-			console.log(meses[3]);
+			console.log(meses[2]);
+			// Con el numero 3, está indicando que quiera mostar el objeto de la posicion"2" (Contar siempre desde 0)
+			// Entonces saldrá como resultado el mes "Agosto"
+			// SI ponemos 3, saldria que no hay nada, no esta definido
 
-			// Funcions sobre array
+			// Funcions sobre Array
+			// Push= Sirve para añadir un elemento al Array
+
 			meses.push("Junio");
+			// Unshift para poner el elemento al final
 			meses.unshift("Enero");
+
 			console.log(meses);
+			// Pop = Para borrar un elemento del Array
 			meses.pop("Junio");
 
 			var position = meses.indexOf("Abril");

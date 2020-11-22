@@ -23,6 +23,7 @@
 			}
 
 			//Exemple 2
+			// Estructura de control de selecció  (else if)
 			/*------------------------------------*/
 			let notaExamen = 20;
 			if (notaExamen >6 && notaExamen <9){
@@ -38,6 +39,7 @@
 			}
 
 			//Exemple 3 - switch
+			// COndiciones multimples que compara con el valor
 			/*------------------------------------*/
 			let priceProduct=500;
 			let typeClient = "premium";
@@ -46,6 +48,7 @@
 					console.log("Usuari Premium");
 					priceProduct *=0.85; // Descompte 15%
 					break;
+					// Siempre debe haber un Break al ejecutar cada "CASE"
 				case "platinium":
 					console.log("Usuari Plata");
 					priceProduct *=0.90; // Descompte 10%
@@ -62,10 +65,10 @@
 				console.log("price és igual en valor i tipus de variable");
 			}
 
-			//Exemple 5 - Operador Elvis
+			//Exemple 5 - Operador Elvis = ?
 			/*------------------------------------*/	
-			// Si el client es premium tornarà un descompte. 
-			// En cas contrari tornarà el preu normal			
+			// Si el client es premium devolverá un descompte. 
+			// En cas contrari devolverá el preu normal			
 			let newPrice = (typeClient=="premium")?(price*0.90):price;
 			console.log("preu final", newPrice);
 
@@ -76,11 +79,14 @@
 
 			// Per recorrer estructures de dades com arrays o repetir
 			// un bloc de codi n vegades
+			// EL bucle FOR, solo se pone cuando se sepa cuantas veces se tiene que hacer el bucle, oasease, repetir
+			// La variable "i", se le puede llamar de otro modo.
 			for(var i=0; i<10; i++){
 				console.log("Iteració número:" + i);
 			}
 
-			// Bucle per repetir n vegades un bloc de codi segons una condició 
+			// Bucle que se repite las veces que hagan falta un bloque de codigo según la condicion. 
+			// Cuidado con hacer Bucles infinitos
 			var points=1;
 			while(points<=10){
 				document.write("<p>Points player:" + points +"</p>");
